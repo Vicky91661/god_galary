@@ -112,6 +112,7 @@ body{
 
 
 
+
 @media screen and (max-width:1024px)
 {
     .container
@@ -129,19 +130,6 @@ body{
     {
         grid-row: span 1;
         grid-column: span 3;
-    }
-
-}
-@media screen and (max-width:1024px)
-{
-    .container
-    {
-        flex-direction: column;
-    }
-    .box
-    {
-        grid-row: span 1;
-        grid-column: span 4;
     }
 
 }
