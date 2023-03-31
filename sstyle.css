@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Kaushan Script';
+    font-size: 1.2rem;
+}
+.heading
+{
+    
+    color: white !important;
+    font-size: 3rem;
+}
+.sub_heading
+{
+    color: #ddd;
+    text-align: center;
+    margin-top: 10px;
+}
+.container
+{
+    display: flex;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background: linear-gradient(to right,black,#EBB02D);
+
+}
+.grid_left
+{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.grid_right
+{
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 120px;
+}
+.box
+{
+   font-size: 1rem;
+   font-weight: 400;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-blend-mode: hard-light;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+.grid_image
+{
+    width: 100px;
+}
+.box:hover
+{
+    background-color: #999;
+    background-position: bottom;
+    box-shadow: 0 0 10px black;
+}
+.row2
+{
+    grid-row: span 2;
+}
+.col2
+{
+    grid-column: span 2;
+}
+#box-2
+{
+    background-position: top;
+}
+#box-7
+{
+    background-position: center;
+}
+#box-1:hover{
+    background-position: top;
+}
+#box-3:hover {
+    background-position: top;
+}
+#box-6:hover {
+    background-position: top;
+}
+#box-7:hover {
+    background-position: bottom;
+}
+#box-5:hover {
+    background-position: top;
+}
+#box-2:hover {
+    background-position: center;
+}
+
+
+
+/* -----------------------------------media Querry --------------------------------------------*/
+
+
+
+@media screen and (max-width:1024px)
+{
+    .container
+    {
+        flex-direction: column;
+    }
+    .box
+    {
+        grid-row: span 1;
+        grid-column: span 4;
+    }
+
+}
